@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Posts from "./components/Posts/Posts";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            {/*// з jsonplaceholder отримати всі пости в компоненту Posts.js*/}
+            {/*// відобразити кожного інформацію (id,title) з кожного поста (компонента Post)*/}
+            {/*// Зробити кнопку вибора поста, при натисканні на яку в Posts.js ви покажете детальну інфомацію про пост(всю інфу)*/}
+            <Posts/>
+        </div>
+    );
 }
-
 export default App;
