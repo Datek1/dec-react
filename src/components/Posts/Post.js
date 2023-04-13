@@ -10,8 +10,7 @@ const Post = ({posts}) => {
     return (
         <>
             <h2>id - {posts.id} title - {posts.title}</h2>
-            <button onClick={() => {getPost(posts)}}>details
-            </button>
+            <button onClick={() => {getPost(posts)}}>details</button>
             {descPost &&
                 <>
                     <FullDescription descPost={descPost}/>
