@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import UserForm from "./components/Users/UserForm";
+import CommentForm from "./components/comments/CommentForm";
+import Cars from "./components/Cars/Cars";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            {/*Зробити компонент, в якому буде форма, за допомоги якої можливо створити нового юзера постовим запитом на http://jsonplaceholder.typicode.com/users*/}
+            <UserForm/>
+            {/*Зробити компонент, в якому буде форма, за допомоги якої можливо створити новий комментар постовим запитом на http://jsonplaceholder.typicode.com/comments*/}
+            <hr/>
+            <CommentForm/>
+            {/*Реалізувати створення, видалення та оновлення машин*/}
+            <hr/>
+            <Cars/>
+        </div>
+    );
 }
 
 export default App;
